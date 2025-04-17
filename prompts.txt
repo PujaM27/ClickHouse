@@ -1,51 +1,92 @@
 # AI Tooling Prompts
 
-## Component Development
-1. "Create a Login component with proper autocomplete attributes and error handling"
-2. "Update the ClickHouseConfig component to include proper id, name, and label associations"
-3. "Fix form field accessibility issues in the ClickHouseConfig component"
-
 ## Backend Development
-1. "Add JWT token validation endpoint to the FastAPI backend"
-2. "Implement ClickHouse connection handling with proper error management"
-3. "Create test cases for data type mapping and validation"
+
+1. FastAPI Endpoint Creation
+```
+Create a FastAPI endpoint for connecting to ClickHouse with proper error handling and JWT authentication.
+Include test connection functionality and return appropriate status codes.
+```
+
+2. Data Type Mapping
+```
+Implement type mapping between ClickHouse and Python data types.
+Handle edge cases for numeric, date, and string types.
+Include validation and conversion functions.
+```
+
+3. Multi-table Join Implementation
+```
+Create a function to handle multi-table joins in ClickHouse.
+Support different join types (INNER, LEFT, RIGHT).
+Include validation for join conditions and column selection.
+```
+
+## Frontend Development
+
+1. React Component Structure
+```
+Create a React component for ClickHouse configuration with Material-UI.
+Include form validation, error handling, and loading states.
+Ensure proper accessibility attributes and form field labels.
+```
+
+2. Data Preview Component
+```
+Implement a data preview component showing the first 100 records.
+Include column selection, sorting, and filtering capabilities.
+Add type warnings and data validation feedback.
+```
+
+3. Progress Tracking
+```
+Create a progress tracking component for data transfer operations.
+Show percentage complete, estimated time remaining, and current operation.
+Include error handling and retry capabilities.
+```
 
 ## Testing
-1. "Add test cases for JWT token validation in test_datasets.py"
-2. "Create test cases for data type mapping and validation"
-3. "Implement test cases for multi-table joins"
+
+1. Test Case Generation
+```
+Create test cases for ClickHouse to CSV export functionality.
+Include success cases, error handling, and edge cases.
+Test data type conversion and validation.
+```
+
+2. Authentication Testing
+```
+Implement test cases for JWT token validation.
+Test expired tokens, invalid signatures, and missing tokens.
+Include proper error messages and status codes.
+```
+
+3. Integration Testing
+```
+Create integration tests for the complete data transfer workflow.
+Test ClickHouse connection, data export, and import operations.
+Include error scenarios and recovery procedures.
+```
 
 ## Documentation
-1. "Create a comprehensive README.md with setup, configuration, and run instructions"
-2. "Document the API endpoints and their usage"
-3. "Add security considerations and best practices"
 
-## Error Handling
-1. "Implement proper error handling for ClickHouse connection failures"
-2. "Add user-friendly error messages for form validation"
-3. "Create error handling for file upload and data processing"
+1. API Documentation
+```
+Generate comprehensive API documentation using FastAPI's automatic docs.
+Include request/response examples, error codes, and authentication details.
+Add usage examples for each endpoint.
+```
 
-## Security
-1. "Implement JWT token validation and expiration handling"
-2. "Add input validation for all API endpoints"
-3. "Implement proper CORS configuration"
+2. Setup Instructions
+```
+Create detailed setup instructions for the application.
+Include prerequisites, installation steps, and configuration details.
+Add troubleshooting guides for common issues.
+```
 
-## Performance
-1. "Optimize data transfer between ClickHouse and flat files"
-2. "Implement progress tracking for large data transfers"
-3. "Add data preview functionality with pagination"
-
-## Accessibility
-1. "Add proper ARIA labels to form fields"
-2. "Implement keyboard navigation support"
-3. "Ensure proper color contrast and text sizing"
-
-## Data Processing
-1. "Implement data type mapping between ClickHouse and Python"
-2. "Add support for different CSV delimiters"
-3. "Create data validation and cleaning functions"
-
-## UI/UX
-1. "Improve form field validation feedback"
-2. "Add loading states and progress indicators"
-3. "Implement responsive design for different screen sizes" 
+3. User Guide
+```
+Write a user guide for the application.
+Include step-by-step instructions for data transfer operations.
+Add screenshots and examples for each feature.
+``` 

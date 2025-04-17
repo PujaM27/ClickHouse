@@ -10,7 +10,6 @@ A web-based application for data ingestion between ClickHouse and flat files (CS
 - Data preview functionality
 - JWT-based authentication
 - Type validation and mapping
-- Progress tracking for large transfers
 
 ## Technical Stack
 
@@ -23,15 +22,15 @@ A web-based application for data ingestion between ClickHouse and flat files (CS
 
 - Python 3.8+
 - Node.js 14+
-- Docker and Docker Compose
-- Git
+- Docker
+- Docker Compose
 
 ## Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/ClickHouse.git
+git clone <repository-url>
 cd ClickHouse
 ```
 
@@ -39,8 +38,6 @@ cd ClickHouse
 
 ```bash
 cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -107,38 +104,39 @@ Open your browser and navigate to:
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:8000
 
+## Usage
+
+1. **Login**
+   - Use the provided credentials to log in
+   - JWT token will be automatically managed
+
+2. **ClickHouse Connection**
+   - Configure ClickHouse connection settings
+   - Test connection before proceeding
+
+3. **Data Transfer**
+   - Export: Select tables and columns to export to CSV
+   - Import: Upload CSV files to import into ClickHouse
+   - Preview: View data before transfer
+
+4. **Multi-table Joins**
+   - Configure join conditions between tables
+   - Export joined data to CSV
+
 ## Testing
 
-### Backend Tests
+Run the test suite:
 
 ```bash
 cd backend
-pytest
+pytest tests/
 ```
-
-### Frontend Tests
-
-```bash
-cd frontend
-npm test
-```
-
-## Sample Data
-
-The application includes two sample datasets:
-
-1. UK Price Paid Dataset
-   - Property price data
-   - Columns: price, date, postcode, property_type, etc.
-
-2. OnTime Dataset
-   - Flight data
-   - Columns: Year, Quarter, Month, FlightDate, etc.
 
 ## API Documentation
 
-Once the backend server is running, access the API documentation at:
-http://localhost:8000/docs
+Access the API documentation at:
+- Swagger UI: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
 
 ## Security
 
@@ -158,8 +156,8 @@ http://localhost:8000/docs
 
 ## License
 
-MIT License
+[Your License Here]
 
 ## Support
 
-For support, please open an issue in the GitHub repository. 
+For support, please [create an issue](<repository-url>/issues) in the repository. 
