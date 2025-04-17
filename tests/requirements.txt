@@ -1,0 +1,5 @@
+pytest==7.4.0
+requests==2.31.0
+pandas==2.0.3
+clickhouse-driver==0.2.6
+PyJWT==2.8.0 

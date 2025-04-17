@@ -1,0 +1,51 @@
+# AI Tooling Prompts
+
+## Component Development
+1. "Create a Login component with proper autocomplete attributes and error handling"
+2. "Update the ClickHouseConfig component to include proper id, name, and label associations"
+3. "Fix form field accessibility issues in the ClickHouseConfig component"
+
+## Backend Development
+1. "Add JWT token validation endpoint to the FastAPI backend"
+2. "Implement ClickHouse connection handling with proper error management"
+3. "Create test cases for data type mapping and validation"
+
+## Testing
+1. "Add test cases for JWT token validation in test_datasets.py"
+2. "Create test cases for data type mapping and validation"
+3. "Implement test cases for multi-table joins"
+
+## Documentation
+1. "Create a comprehensive README.md with setup, configuration, and run instructions"
+2. "Document the API endpoints and their usage"
+3. "Add security considerations and best practices"
+
+## Error Handling
+1. "Implement proper error handling for ClickHouse connection failures"
+2. "Add user-friendly error messages for form validation"
+3. "Create error handling for file upload and data processing"
+
+## Security
+1. "Implement JWT token validation and expiration handling"
+2. "Add input validation for all API endpoints"
+3. "Implement proper CORS configuration"
+
+## Performance
+1. "Optimize data transfer between ClickHouse and flat files"
+2. "Implement progress tracking for large data transfers"
+3. "Add data preview functionality with pagination"
+
+## Accessibility
+1. "Add proper ARIA labels to form fields"
+2. "Implement keyboard navigation support"
+3. "Ensure proper color contrast and text sizing"
+
+## Data Processing
+1. "Implement data type mapping between ClickHouse and Python"
+2. "Add support for different CSV delimiters"
+3. "Create data validation and cleaning functions"
+
+## UI/UX
+1. "Improve form field validation feedback"
+2. "Add loading states and progress indicators"
+3. "Implement responsive design for different screen sizes" 
