@@ -97,13 +97,6 @@ python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 cd frontend
 npm start
 ```
-
-### Access the Application
-
-Open your browser and navigate to:
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:8000
-
 ## Usage
 
 1. **Login**
@@ -154,10 +147,3 @@ Access the API documentation at:
 4. Push to the branch
 5. Create a Pull Request
 
-## License
-
-[Your License Here]
-
-## Support
-
-For support, please [create an issue](<repository-url>/issues) in the repository. 
